@@ -1,17 +1,17 @@
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Arrays;
+import java.util.List;
 
-public class 3Sum {
+class ThreeSum {
     public List<List<Integer>> threeSum(int[] nums)
     {
         List<List<Integer>> result;
         result = new ArrayList<>();
         Arrays.sort(nums);
-        for(int i = 0 ; i <nums.length ; i++)
+        for(int i = 0 ; i < nums.length ; i++)
         {
-            if(i>0 && nums[i] == nums[i+1])
+            if(i > 0 && nums[i] == nums[i-1])
             {
                 continue;
             }
